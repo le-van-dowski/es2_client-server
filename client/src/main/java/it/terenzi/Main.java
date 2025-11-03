@@ -22,11 +22,13 @@ public class Main {
         BufferedReader in =new BufferedReader(new InputStreamReader(s.getInputStream()));
         PrintWriter out =new PrintWriter(s.getOutputStream(), true);
 
-        String version =in.readLine();
-        String exit= "exit";
         String e = "";
+        String op = "";
         do{
-            System.out.println("inserire stringa : ");
+            System.out.println("\nOPERAZIONI\n1.\tsomma\n2.\tsottrazione\n3.\tmoltiplicazione\n4.\tdivisione");
+            System.out.println("\ninserire operando: ");
+            op = scanner.nextLine();
+            out.println(op);
             e =scanner.nextLine();
             out.println(e);
             e =in.readLine();

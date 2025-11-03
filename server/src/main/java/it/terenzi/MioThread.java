@@ -32,6 +32,11 @@ public class MioThread extends Thread{
         }
         int n1 = in.read();
         int n2 = in.read();
+        
+        if(n2==0){
+            e =true;
+            msg = "KO: div_by_zero";
+        }
         int a=0;
         switch (op) {
             
